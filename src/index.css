@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply font-sans text-slate-900 bg-white antialiased;
+  }
+  h1, h2, h3, h4 { @apply font-display; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-mid text-white font-medium px-5 py-2.5 rounded-lg transition shadow-sm hover:shadow-brand;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-navy font-semibold px-5 py-2.5 rounded-lg transition hover:shadow-gold;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 text-slate-700 hover:text-navy hover:bg-slate-100 font-medium px-4 py-2 rounded-lg transition;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-slate-300 hover:border-navy hover:text-navy text-slate-700 font-medium px-4 py-2 rounded-lg transition;
+  }
+  .input-base {
+    @apply w-full px-4 py-2.5 rounded-lg border border-slate-300 bg-white text-slate-900 placeholder-slate-400 outline-none transition focus:border-navy focus:ring-2 focus:ring-navy/10;
+  }
+  .card {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-soft transition hover:shadow-strong;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1;
+  }
+  .section-tag {
+    @apply inline-block rounded-full bg-brand-blue/10 text-brand-blue text-xs font-semibold tracking-wide uppercase px-3 py-1 mb-3;
+  }
+}
+
+/* Custom scrollbar for chat */
+.chat-scroll::-webkit-scrollbar { width: 6px; }
+.chat-scroll::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
