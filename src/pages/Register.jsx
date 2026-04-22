@@ -142,11 +142,6 @@ export default function Register() {
             дербестендірілген кеңес алыңыз немесе заңгер ретінде жұмыс
             бастаңыз.
           </p>
-          <div className="grid grid-cols-3 gap-4 mt-10">
-            <Stat v="250+" l="Заңгер" />
-            <Stat v="12k+" l="Іс" />
-            <Stat v="4.8" l="Рейтинг" />
-          </div>
         </div>
         <div className="text-xs text-white/40">© 2026 AdilBridge</div>
       </div>

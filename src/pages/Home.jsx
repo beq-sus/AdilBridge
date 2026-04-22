@@ -59,12 +59,6 @@ export default function Home() {
                 </button>
               </div>
             </div>
-
-            <div className="grid grid-cols-3 gap-6 mt-10">
-              <StatHero value="250+" label="Заңгер" />
-              <StatHero value="12k+" label="Шешілген іс" />
-              <StatHero value="4.8" label="Орташа рейтинг" />
-            </div>
           </div>
 
           {/* Preview card */}
