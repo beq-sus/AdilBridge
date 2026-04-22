@@ -181,32 +181,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* REVIEWS */}
-      <section className="py-20 px-5 bg-slate-50">
-        <div className="max-w-6xl mx-auto text-center">
-          <span className="section-tag">Пікірлер</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-navy mt-2">
-            Қолданушылар не айтады
-          </h2>
-          <div className="mt-10 grid md:grid-cols-3 gap-5">
-            {REVIEWS.map((r) => (
-              <div key={r.id} className="card p-6 text-left">
-                <div className="text-amber-500 mb-2">{'★'.repeat(Math.round(r.rating))}</div>
-                <p className="text-slate-700 leading-relaxed text-sm">"{r.text}"</p>
-                <div className="flex items-center gap-3 mt-5 pt-5 border-t border-slate-100">
-                  <div className="w-9 h-9 rounded-full bg-navy text-white text-xs flex items-center justify-center font-semibold">
-                    {r.initials}
-                  </div>
-                  <div>
-                    <div className="text-sm font-medium text-navy">{r.user}</div>
-                    <div className="text-xs text-slate-500">Туралы: {r.lawyer}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* DOC GEN CTA */}
       <section className="py-20 px-5">
